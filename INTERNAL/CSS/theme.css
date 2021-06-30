@@ -1,0 +1,58 @@
+:root {
+	--theme: #34495e;
+	--accent: #2980b9;
+	--accent2: #27ae60;
+	--accent3: #831831;
+	font-family: sans-serif;
+}
+
+/*site wide buttons*/
+.btn {
+	display: block;
+	margin: 5px;
+	border: 2.5px solid var(--accent2);
+	background-color: transparent;
+	font-weight: bold;
+	color: var(--accent2);
+}
+
+.btn:hover {
+	background-color: var(--accent2);
+	color: #fff;
+	transition: 0.5s;
+}
+
+.btn-rnd {
+	aspect-ratio: 1;
+	border-radius: 50%;
+	font-size: 150%;
+}
+.btn-ovl {
+	border-radius: 300px;
+	padding: 5px;
+	font-size: 120%;
+}
+
+/*logo style*/
+.logoCard {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	transform: translate(-50%, -50%);
+	background-color: var(--accent2);
+	padding-top: 12%;
+	width: 60px;
+	border-radius: 10%;
+	transform: rotate(-15deg) translate(100%, 0);
+	transform-origin: right bottom;
+}
+.logoCard:first-of-type {
+	background-color: var(--accent3);
+	transform: rotate(-25deg) translate(100%, 0);
+	transform-origin: right bottom;
+}
+.logoCard:last-of-type {
+	background-color: var(--accent);
+	transform: rotate(-5deg) translate(100%, 0);
+	transform-origin: right bottom;
+}
